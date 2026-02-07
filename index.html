@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SucukCamp</title>
+    <meta name="description" content="SucukCamp – Das Streamerprojekt von Mert. Start am 07.02.2026">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo-eksioglu.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sticky Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <a href="#hero" class="navbar-logo">
+                <span class="navbar-logo-text">SUCUKCAMP</span>
+            </a>
+            <div class="navbar-menu">
+                <a href="#concept" class="navbar-link">Konzept</a>
+                <a href="#channels" class="navbar-link">Kanäle</a>
+                <a href="#schedule" class="navbar-link">Zeitplan</a>
+                <a href="#channels" class="navbar-cta">Ansehen</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background"></div>
+        <div class="hero-sucuk-decor">
+            <img src="images/Sucuk.png" alt="" class="sucuk-float sucuk-float-1" aria-hidden="true" />
+            <img src="images/Sucuk.png" alt="" class="sucuk-float sucuk-float-2" aria-hidden="true" />
+            <img src="images/Sucuk.png" alt="" class="sucuk-float sucuk-float-3" aria-hidden="true" />
+            <img src="images/Sucuk.png" alt="" class="sucuk-float sucuk-float-4" aria-hidden="true" />
+            <img src="images/Sucuk gerade.png" alt="" class="sucuk-float sucuk-float-5" aria-hidden="true" />
+            <img src="images/Sucuk gerade.png" alt="" class="sucuk-float sucuk-float-6" aria-hidden="true" />
+            <img src="images/Sucuk gerade.png" alt="" class="sucuk-float sucuk-float-7" aria-hidden="true" />
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">SUCUKCAMP</h1>
+            <p class="hero-subline">Streamerprojekt von Mert – Start 07.02.2026</p>
+            <p class="hero-tagline">Mehrere Creator. Ein Camp. Gemeinsam für Sucuk.</p>
+            
+            <!-- Countdown Box -->
+            <div class="countdown-box">
+                <div class="countdown-item">
+                    <div class="countdown-value" id="days">00</div>
+                    <div class="countdown-label">TAGE</div>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <div class="countdown-value" id="hours">00</div>
+                    <div class="countdown-label">STUNDEN</div>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <div class="countdown-value" id="minutes">00</div>
+                    <div class="countdown-label">MINUTEN</div>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <div class="countdown-value" id="seconds">00</div>
+                    <div class="countdown-label">SEKUNDEN</div>
+                </div>
+            </div>
+
+            <!-- Hero Buttons -->
+            <div class="hero-buttons">
+                <a href="#channels" class="btn btn-primary">Jetzt einschalten</a>
+                <a href="#channels" class="btn btn-secondary">Teilnehmer</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Concept Section -->
+    <section class="concept-section" id="concept">
+        <div class="concept-divider"></div>
+        <div class="container">
+            <div class="concept-grid">
+                <!-- Left: Text Content -->
+                <div class="concept-text">
+                    <h2 class="concept-headline section-title" data-reveal="left">Was ist SucukCamp?</h2>
+                    <p class="concept-description" data-reveal="left">
+                        SucukCamp vereint deine Lieblings-Streamer für täglichen Content und jede Menge witzige Momente.<br>
+                        Mehrere Creator. Ein Camp. Gemeinsam für Sucuk.<br>
+                    </p>
+                </div>
+                
+                <!-- Right: Cards -->
+                <div class="concept-cards">
+                    <!-- Card 1 -->
+                    <div class="concept-card" data-reveal="up">
+                        <div class="concept-card-accent"></div>
+                        <h3 class="concept-card-title">Was passiert?</h3>
+                        <ul class="concept-card-list">
+                            <li>Live-Content mit mehreren Creatorn</li>
+                            <li>Unerwartete Collabs</li>
+                            <li>Specials, mit denen keiner rechnet</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="concept-card" data-reveal="up">
+                        <div class="concept-card-accent"></div>
+                        <h3 class="concept-card-title">Was du bekommst</h3>
+                        <ul class="concept-card-list">
+                            <li>Daily Streams</li>
+                            <li>Clips & Highlights</li>
+                            <li>Community-Momente</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Channels Section -->
+    <section class="channels-section" id="channels">
+        <div class="channels-divider"></div>
+        <div class="channels-background-glows">
+            <div class="channels-glow channels-glow-1"></div>
+            <div class="channels-glow channels-glow-2"></div>
+            <div class="channels-glow channels-glow-3"></div>
+        </div>
+        <div class="channels-section-wrapper">
+            <div class="channels-section-wrapper">
+            <div class="container">
+            <!-- Section Head -->
+            <div class="channels-head" data-reveal="up">
+                <p class="channels-eyebrow">Crew & Streams</p>
+                <h2 class="channels-title section-title">Alle Kanäle</h2>
+                <p class="channels-subtext">Verfolge alles live und folge den Teilnehmern.</p>
+            </div>
+
+            <!-- Hosts Block -->
+            <div class="channels-block hosts-block" data-reveal="up">
+                <p class="channels-block-eyebrow">LIVE HOSTS</p>
+                <h3 class="channels-block-title">Hosts</h3>
+                <p class="channels-block-subtitle">Hier läuft der Livestream – jetzt ansehen.</p>
+                <div class="channels-grid channels-grid-hosts">
+                    <!-- Host: abugoku9999 -->
+                    <div class="channel-card channel-card-host" data-reveal="up" data-twitch="https://www.twitch.tv/abugoku9999" data-username="abugoku9999" data-role="host">
+                        <div class="channel-avatar" style="background: radial-gradient(circle at 30% 30%, rgba(212, 175, 55, 0.3), rgba(212, 175, 55, 0.2));">
+                            <img class="channel-avatar-img" alt="Twitch Avatar von abugoku9999" loading="lazy" decoding="async" />
+                            <span class="channel-avatar-fallback">AB</span>
+                        </div>
+                        <h4 class="channel-name">abugoku9999</h4>
+                        <span class="channel-badge channel-badge-host">HOST</span>
+                        <div class="channel-meta">
+                            <p class="channel-meta-line">Host Stream</p>
+                        </div>
+                        <div class="channel-buttons">
+                            <a href="https://www.twitch.tv/abugoku9999" target="_blank" rel="noopener noreferrer" class="channel-btn channel-btn-primary">
+                                Ansehen
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Host: MertAbiMula -->
+                    <div class="channel-card channel-card-host" data-reveal="up" data-twitch="https://www.twitch.tv/mertabimula" data-username="mertabimula" data-role="host">
+                        <div class="channel-avatar" style="background: radial-gradient(circle at 30% 30%, rgba(212, 175, 55, 0.3), rgba(212, 175, 55, 0.2));">
+                            <img class="channel-avatar-img" alt="Twitch Avatar von MertAbiMula" loading="lazy" decoding="async" />
+                            <span class="channel-avatar-fallback">MA</span>
+                        </div>
+                        <h4 class="channel-name">MertAbiMula</h4>
+                        <span class="channel-badge channel-badge-host">HOST</span>
+                        <div class="channel-meta">
+                            <p class="channel-meta-line">Host Stream</p>
+                        </div>
+                        <div class="channel-buttons">
+                            <a href="https://www.twitch.tv/mertabimula" target="_blank" rel="noopener noreferrer" class="channel-btn channel-btn-primary">
+                                Ansehen
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider between Hosts and Participants -->
+            <div class="channels-divider-block"></div>
+
+            <!-- Participants Block -->
+            <div class="channels-block participants-block" data-reveal="up">
+                <p class="channels-block-eyebrow">CREW</p>
+                <h3 class="channels-block-title">Teilnehmer</h3>
+                <p class="channels-block-subtitle">Follow der Crew für Perspektiven & Highlights.</p>
+                <div class="channels-grid channels-grid-participants">
+
+                    <!-- Teilnehmer: Ediz der Breite -->
+                    <div class="channel-card channel-card-participant" data-reveal="up" data-twitch="https://www.twitch.tv/edizderbreite" data-username="edizderbreite" data-role="participant">
+                        <div class="channel-avatar" style="background: radial-gradient(circle at 30% 30%, rgba(100, 200, 255, 0.3), rgba(145, 70, 255, 0.2));">
+                            <img class="channel-avatar-img" alt="Twitch Avatar von Ediz der Breite" loading="lazy" decoding="async" />
+                            <span class="channel-avatar-fallback">ED</span>
+                        </div>
+                        <h4 class="channel-name">Ediz der Breite</h4>
+                        <span class="channel-badge channel-badge-participant">TEILNEHMER</span>
+                        <div class="channel-meta">
+                            <p class="channel-meta-line">Live dabei</p>
+                        </div>
+                        <div class="channel-buttons">
+                            <a href="https://www.twitch.tv/edizderbreite" target="_blank" rel="noopener noreferrer" class="channel-btn channel-btn-primary">
+                                Follow
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Teilnehmer: itsAssiTV -->
+                    <div class="channel-card channel-card-participant" data-reveal="up" data-twitch="https://www.twitch.tv/itsassitv" data-username="itsassitv" data-role="participant">
+                        <div class="channel-avatar" style="background: radial-gradient(circle at 30% 30%, rgba(255, 150, 100, 0.3), rgba(255, 106, 42, 0.2));">
+                            <img class="channel-avatar-img" alt="Twitch Avatar von itsAssiTV" loading="lazy" decoding="async" />
+                            <span class="channel-avatar-fallback">IT</span>
+                        </div>
+                        <h4 class="channel-name">itsAssiTV</h4>
+                        <span class="channel-badge channel-badge-participant">TEILNEHMER</span>
+                        <div class="channel-meta">
+                            <p class="channel-meta-line">Live dabei</p>
+                        </div>
+                        <div class="channel-buttons">
+                            <a href="https://www.twitch.tv/itsassitv" target="_blank" rel="noopener noreferrer" class="channel-btn channel-btn-primary">
+                                Follow
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Teilnehmer: MausAbi -->
+                    <div class="channel-card channel-card-participant" data-reveal="up" data-twitch="https://www.twitch.tv/mausabi" data-username="mausabi" data-role="participant">
+                        <div class="channel-avatar" style="background: radial-gradient(circle at 30% 30%, rgba(150, 255, 150, 0.3), rgba(100, 200, 255, 0.2));">
+                            <img class="channel-avatar-img" alt="Twitch Avatar von MausAbi" loading="lazy" decoding="async" />
+                            <span class="channel-avatar-fallback">MU</span>
+                        </div>
+                        <h4 class="channel-name">MausAbi</h4>
+                        <span class="channel-badge channel-badge-participant">TEILNEHMER</span>
+                        <div class="channel-meta">
+                            <p class="channel-meta-line">Live dabei</p>
+                        </div>
+                        <div class="channel-buttons">
+                            <a href="https://www.twitch.tv/mausabi" target="_blank" rel="noopener noreferrer" class="channel-btn channel-btn-primary">
+                                Follow
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Teilnehmer: Jussef -->
+                    <div class="channel-card channel-card-participant" data-reveal="up" data-twitch="https://www.twitch.tv/jussef" data-username="jussef" data-role="participant">
+                        <div class="channel-avatar" style="background: radial-gradient(circle at 30% 30%, rgba(255, 200, 100, 0.3), rgba(255, 150, 100, 0.2));">
+                            <img class="channel-avatar-img" alt="Twitch Avatar von Jussef" loading="lazy" decoding="async" />
+                            <span class="channel-avatar-fallback">JU</span>
+                        </div>
+                        <h4 class="channel-name">Jussef</h4>
+                        <span class="channel-badge channel-badge-participant">TEILNEHMER</span>
+                        <div class="channel-meta">
+                            <p class="channel-meta-line">Live dabei</p>
+                        </div>
+                        <div class="channel-buttons">
+                            <a href="https://www.twitch.tv/jussef" target="_blank" rel="noopener noreferrer" class="channel-btn channel-btn-primary">
+                                Follow
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Teilnehmer: xRohat -->
+                    <div class="channel-card channel-card-participant" data-reveal="up" data-twitch="https://www.twitch.tv/xrohat" data-username="xrohat" data-role="participant">
+                        <div class="channel-avatar" style="background: radial-gradient(circle at 30% 30%, rgba(200, 150, 255, 0.3), rgba(145, 70, 255, 0.2));">
+                            <img class="channel-avatar-img" alt="Twitch Avatar von xRohat" loading="lazy" decoding="async" />
+                            <span class="channel-avatar-fallback">XR</span>
+                        </div>
+                        <h4 class="channel-name">xRohat</h4>
+                        <span class="channel-badge channel-badge-participant">TEILNEHMER</span>
+                        <div class="channel-meta">
+                            <p class="channel-meta-line">Live dabei</p>
+                        </div>
+                        <div class="channel-buttons">
+                            <a href="https://www.twitch.tv/xrohat" target="_blank" rel="noopener noreferrer" class="channel-btn channel-btn-primary">
+                                Follow
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Teilnehmer: onurcan -->
+                    <div class="channel-card channel-card-participant" data-reveal="up" data-twitch="https://www.twitch.tv/onurcan" data-username="onurcan" data-role="participant">
+                        <div class="channel-avatar" style="background: radial-gradient(circle at 30% 30%, rgba(255, 100, 150, 0.3), rgba(255, 106, 42, 0.2));">
+                            <img class="channel-avatar-img" alt="Twitch Avatar von onurcan" loading="lazy" decoding="async" />
+                            <span class="channel-avatar-fallback">ON</span>
+                        </div>
+                        <h4 class="channel-name">onurcan</h4>
+                        <span class="channel-badge channel-badge-participant">TEILNEHMER</span>
+                        <div class="channel-meta">
+                            <p class="channel-meta-line">Live dabei</p>
+                        </div>
+                        <div class="channel-buttons">
+                            <a href="https://www.twitch.tv/onurcan" target="_blank" rel="noopener noreferrer" class="channel-btn channel-btn-primary">
+                                Follow
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Teilnehmer: AliBumayeTV -->
+                    <div class="channel-card channel-card-participant" data-reveal="up" data-twitch="https://www.twitch.tv/alibumayetv" data-username="alibumayetv" data-role="participant">
+                        <div class="channel-avatar" style="background: radial-gradient(circle at 30% 30%, rgba(100, 255, 200, 0.3), rgba(100, 200, 255, 0.2));">
+                            <img class="channel-avatar-img" alt="Twitch Avatar von AliBumayeTV" loading="lazy" decoding="async" />
+                            <span class="channel-avatar-fallback">AL</span>
+                        </div>
+                        <h4 class="channel-name">AliBumayeTV</h4>
+                        <span class="channel-badge channel-badge-participant">TEILNEHMER</span>
+                        <div class="channel-meta">
+                            <p class="channel-meta-line">Live dabei</p>
+                        </div>
+                        <div class="channel-buttons">
+                            <a href="https://www.twitch.tv/alibumayetv" target="_blank" rel="noopener noreferrer" class="channel-btn channel-btn-primary">
+                                Follow
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Teilnehmer: Knossi -->
+                    <div class="channel-card channel-card-participant" data-reveal="up" data-twitch="https://www.twitch.tv/therealknossi" data-username="therealknossi" data-role="participant">
+                        <div class="channel-avatar" style="background: radial-gradient(circle at 30% 30%, rgba(255, 200, 50, 0.3), rgba(255, 106, 42, 0.2));">
+                            <img class="channel-avatar-img" alt="Twitch Avatar von Knossi" loading="lazy" decoding="async" />
+                            <span class="channel-avatar-fallback">KN</span>
+                        </div>
+                        <h4 class="channel-name">Knossi</h4>
+                        <span class="channel-badge channel-badge-participant">TEILNEHMER</span>
+                        <div class="channel-meta">
+                            <p class="channel-meta-line">Live dabei</p>
+                        </div>
+                        <div class="channel-buttons">
+                            <a href="https://www.twitch.tv/therealknossi" target="_blank" rel="noopener noreferrer" class="channel-btn channel-btn-primary">
+                                Follow
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Powered by -->
+            <div class="channels-powered" data-reveal="up">
+                <span class="channels-powered-text">Powered by</span>
+                <a href="https://eksioglu.shop/" target="_blank" rel="noopener noreferrer" class="channels-powered-logo channels-powered-logo-eksioglu">
+                    <img src="images/logotext-eksioglu.png" alt="Eksioglu" class="channels-powered-img" />
+                </a>
+                <span class="channels-powered-amp">&</span>
+                <a href="https://www.yaummi.info/" target="_blank" rel="noopener noreferrer" class="channels-powered-logo channels-powered-logo-yaummi">
+                    <img src="https://www.yaummi.info/assets/img/yaummi-saucen-logo-einzigartige-saucen.png" alt="Yaummi" class="channels-powered-img" />
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule-section" id="schedule">
+        <div class="schedule-divider"></div>
+        <div class="schedule-section-wrapper">
+            <!-- Section Head -->
+            <div class="schedule-head" data-reveal="up">
+                <p class="schedule-eyebrow">TIMELINE</p>
+                <h2 class="schedule-title section-title">Zeitplan</h2>
+                <p class="schedule-subtext">Der komplette Ablauf des SucukCamps – täglich live ab 07.02.2026</p>
+            </div>
+
+            <!-- Schedule Cards Grid -->
+            <div class="schedule-grid" data-reveal="up">
+                <!-- Day 1 -->
+                <div class="schedule-card" data-reveal="up">
+                    <div class="schedule-card-header">
+                        <span class="schedule-day">Tag 1</span>
+                        <span class="schedule-date">07.02.2026</span>
+                    </div>
+                    <h3 class="schedule-card-title">Camp Start</h3>
+                    <div class="schedule-time">12:00 Uhr</div>
+                    <p class="schedule-description">Offizieller Start des SucukCamps mit allen Teilnehmern</p>
+                    <ul class="schedule-events">
+                        <li>Willkommens-Stream</li>
+                        <li>Camp-Tour</li>
+                        <li>Erste Challenges</li>
+                    </ul>
+                </div>
+
+                <!-- Day 2 -->
+                <div class="schedule-card" data-reveal="up">
+                    <div class="schedule-card-header">
+                        <span class="schedule-day">Tag 2</span>
+                        <span class="schedule-date">08.02.2026</span>
+                    </div>
+                    <h3 class="schedule-card-title">Tägliche Challenges</h3>
+                    <div class="schedule-time">10:00 - 22:00 Uhr</div>
+                    <p class="schedule-description">Live Challenges, Collabs und Community-Interaktion</p>
+                    <ul class="schedule-events">
+                        <li>Morgen-Stream</li>
+                        <li>Challenge-Zeit</li>
+                        <li>Abend-Recap</li>
+                    </ul>
+                </div>
+
+                <!-- Day 3 -->
+                <div class="schedule-card" data-reveal="up">
+                    <div class="schedule-card-header">
+                        <span class="schedule-day">Tag 3</span>
+                        <span class="schedule-date">09.02.2026</span>
+                    </div>
+                    <h3 class="schedule-card-title">Special Event</h3>
+                    <div class="schedule-time">14:00 Uhr</div>
+                    <p class="schedule-description">Großes Special Event mit allen Teilnehmern</p>
+                    <ul class="schedule-events">
+                        <li>Special Stream</li>
+                        <li>Community-Event</li>
+                        <li>Highlights</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <p>&copy; 2026 SucukCamp</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>

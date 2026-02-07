@@ -1329,9 +1329,11 @@ a {
         text-align: center;
     }
     
-    .concept-headline::after {
+    .concept-headline::after,
+    .concept-headline.section-title::after {
         margin-left: auto;
         margin-right: auto;
+        margin-top: 12px;
     }
     
     .concept-description {

@@ -1892,7 +1892,7 @@ a {
     justify-content: center;
     gap: var(--spacing-md);
     margin-top: var(--spacing-2xl);
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-xs);
     flex-wrap: wrap;
 }
 
@@ -1901,7 +1901,7 @@ a {
         flex-wrap: nowrap;
         gap: var(--spacing-sm);
         margin-top: var(--spacing-xl);
-        margin-bottom: var(--spacing-sm);
+        margin-bottom: var(--spacing-xs);
         padding: 0 var(--spacing-sm);
     }
     
@@ -1930,6 +1930,7 @@ a {
     .channels-powered {
         gap: var(--spacing-xs);
         padding: 0 var(--spacing-xs);
+        margin-bottom: var(--spacing-xs);
     }
     
     .channels-powered-text {

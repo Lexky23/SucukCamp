@@ -1320,12 +1320,23 @@ a {
         padding: var(--spacing-xl) var(--spacing-sm);
     }
     
+    .concept-text {
+        text-align: center;
+    }
+    
     .concept-headline {
         margin-bottom: var(--spacing-sm);
+        text-align: center;
+    }
+    
+    .concept-headline::after {
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .concept-description {
         margin-bottom: var(--spacing-lg);
+        text-align: center;
     }
     
     .concept-card {

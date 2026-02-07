@@ -608,6 +608,8 @@ a {
     text-align: center;
     max-width: 800px;
     width: 100%;
+    padding: 0 var(--spacing-sm);
+    box-sizing: border-box;
 }
 
 .hero-title {
@@ -739,8 +741,10 @@ a {
     transition: var(--transition-base);
     box-shadow: 0 4px 16px var(--gold-glow), inset 0 0 20px rgba(212, 175, 55, 0.1);
     max-width: 800px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
 }
 
 .countdown-box:hover {
@@ -857,12 +861,24 @@ a {
         min-height: 100vh;
     }
     
+    .hero-content {
+        padding: 0 var(--spacing-xs);
+    }
+    
     .hero-title {
         margin-bottom: var(--spacing-sm);
+        font-size: clamp(2rem, 10vw, 4rem);
     }
     
     .hero-subline {
-        margin-bottom: var(--spacing-xl);
+        margin-bottom: var(--spacing-md);
+        font-size: clamp(0.9rem, 3vw, 1.1rem);
+    }
+    
+    .hero-tagline {
+        margin-bottom: var(--spacing-lg);
+        font-size: clamp(0.85rem, 2.5vw, 0.95rem);
+        padding: 0 var(--spacing-xs);
     }
     
     /* Reduce Sucuk visibility on mobile */
@@ -899,38 +915,104 @@ a {
     }
     
     .countdown-box {
-        gap: var(--spacing-sm);
-        padding: var(--spacing-md) var(--spacing-lg);
-        margin-bottom: var(--spacing-xl);
+        gap: var(--spacing-xs);
+        padding: var(--spacing-md) var(--spacing-sm);
+        margin-bottom: var(--spacing-lg);
+        max-width: 100%;
+        width: calc(100% - var(--spacing-md));
     }
     
     .countdown-item {
-        min-width: 60px;
+        min-width: 50px;
+        flex: 1 1 auto;
     }
     
     .countdown-separator {
-        font-size: 1.5rem;
-        padding: 0;
+        font-size: clamp(1.2rem, 4vw, 1.8rem);
+        padding: 0 var(--spacing-xs);
     }
     
     .countdown-value {
-        font-size: 1.5rem;
+        font-size: clamp(1.2rem, 4vw, 1.8rem);
     }
     
     .countdown-label {
-        font-size: 0.7rem;
+        font-size: clamp(0.6rem, 1.5vw, 0.75rem);
     }
     
     .hero-buttons {
         flex-direction: column;
         width: 100%;
-        max-width: 300px;
-        margin: 0 auto;
+        max-width: 100%;
+        gap: var(--spacing-sm);
+        padding: 0 var(--spacing-xs);
     }
     
     .btn {
         width: 100%;
-        padding: var(--spacing-sm) var(--spacing-lg);
+        padding: var(--spacing-sm) var(--spacing-md);
+        font-size: 0.9rem;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+    .hero {
+        padding: var(--spacing-lg) var(--spacing-xs) var(--spacing-md);
+        min-height: 100vh;
+    }
+    
+    .hero-content {
+        padding: 0;
+    }
+    
+    .hero-title {
+        margin-bottom: var(--spacing-xs);
+        font-size: clamp(1.75rem, 12vw, 3rem);
+        line-height: 1.1;
+    }
+    
+    .hero-subline {
+        margin-bottom: var(--spacing-sm);
+        font-size: clamp(0.85rem, 3.5vw, 1rem);
+    }
+    
+    .hero-tagline {
+        margin-bottom: var(--spacing-md);
+        font-size: clamp(0.8rem, 3vw, 0.9rem);
+    }
+    
+    .countdown-box {
+        gap: var(--spacing-xs);
+        padding: var(--spacing-sm) var(--spacing-xs);
+        margin-bottom: var(--spacing-md);
+        width: 100%;
+    }
+    
+    .countdown-item {
+        min-width: 45px;
+    }
+    
+    .countdown-separator {
+        font-size: clamp(1rem, 5vw, 1.5rem);
+        padding: 0 2px;
+    }
+    
+    .countdown-value {
+        font-size: clamp(1rem, 5vw, 1.5rem);
+    }
+    
+    .countdown-label {
+        font-size: clamp(0.55rem, 2vw, 0.65rem);
+    }
+    
+    .hero-buttons {
+        gap: var(--spacing-xs);
+    }
+    
+    .btn {
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: 0.85rem;
     }
 }
 

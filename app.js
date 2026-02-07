@@ -3,6 +3,40 @@
 // ============================================
 
 document.addEventListener('DOMContentLoaded', function() {
+    // ============================================
+    // Mobile Navigation Toggle
+    // ============================================
+    
+    const navbarToggle = document.getElementById('navbar-toggle');
+    const navbarMenu = document.getElementById('navbar-menu');
+    
+    if (navbarToggle && navbarMenu) {
+        navbarToggle.addEventListener('click', function() {
+            navbarToggle.classList.toggle('active');
+            navbarMenu.classList.toggle('active');
+            document.body.style.overflow = navbarMenu.classList.contains('active') ? 'hidden' : '';
+        });
+        
+        // Close menu when clicking on a link
+        const menuLinks = navbarMenu.querySelectorAll('a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navbarToggle.classList.remove('active');
+                navbarMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!navbarToggle.contains(e.target) && !navbarMenu.contains(e.target)) {
+                navbarToggle.classList.remove('active');
+                navbarMenu.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    }
+    
     // Smooth scroll for anchor links
     const anchorLinks = document.querySelectorAll('a[href^="#"]');
     
@@ -22,7 +56,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // Update active link immediately
                 if (link.classList.contains('navbar-link')) {
-                    navbarLinks.forEach(navLink => navLink.classList.remove('active'));
+                    const navLinks = document.querySelectorAll('.navbar-link');
+                    navLinks.forEach(navLink => navLink.classList.remove('active'));
                     link.classList.add('active');
                 }
                 

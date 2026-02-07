@@ -220,6 +220,41 @@ a {
     }
 }
 
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+    position: relative;
+}
+
+.navbar-toggle-icon {
+    width: 100%;
+    height: 3px;
+    background: var(--gold-main);
+    border-radius: 2px;
+    transition: var(--transition-base);
+    transform-origin: center;
+}
+
+.navbar-toggle.active .navbar-toggle-icon:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.navbar-toggle.active .navbar-toggle-icon:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggle.active .navbar-toggle-icon:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
 .navbar-menu {
     display: flex;
     align-items: center;
@@ -319,18 +354,69 @@ a {
         font-size: 1.1rem;
     }
     
-    .navbar-menu {
-        gap: var(--spacing-xs);
+    .navbar-toggle {
+        display: flex;
     }
     
-    .navbar-link {
-        font-size: 0.85rem;
-        padding: var(--spacing-xs) var(--spacing-sm);
+    .navbar-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 280px;
+        height: 100vh;
+        background: rgba(7, 7, 10, 0.98);
+        backdrop-filter: blur(30px);
+        -webkit-backdrop-filter: blur(30px);
+        border-left: 1px solid rgba(212, 175, 55, 0.2);
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 80px var(--spacing-lg) var(--spacing-lg);
+        gap: var(--spacing-md);
+        transition: right var(--transition-base);
+        box-shadow: -4px 0 30px rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        overflow-y: auto;
+    }
+    
+    .navbar-menu.active {
+        right: 0;
+    }
+    
+    .navbar-link,
+    .navbar-cta {
+        width: 100%;
+        font-size: 1rem;
+        padding: var(--spacing-sm) var(--spacing-md);
+        text-align: left;
+        border-radius: 8px;
     }
     
     .navbar-cta {
-        font-size: 0.85rem;
-        padding: var(--spacing-xs) var(--spacing-sm);
+        margin-top: var(--spacing-sm);
+        text-align: center;
+    }
+    
+    .navbar-toggle.active {
+        position: fixed;
+        right: var(--spacing-md);
+        top: var(--spacing-sm);
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-menu {
+        width: 100%;
+        right: -100%;
+    }
+    
+    .navbar-toggle {
+        width: 28px;
+        height: 28px;
+    }
+    
+    .navbar-logo {
+        font-size: 1rem;
     }
 }
 

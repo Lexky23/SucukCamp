@@ -214,9 +214,10 @@ a {
 
 @media (max-width: 480px) {
     .navbar-logo-text {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: 120px;
+        overflow: visible;
+        text-overflow: clip;
+        max-width: none;
+        white-space: nowrap;
     }
 }
 
@@ -350,8 +351,13 @@ a {
         padding: var(--spacing-sm);
     }
     
+    .navbar-container {
+        gap: var(--spacing-sm);
+    }
+    
     .navbar-logo {
         font-size: 1.1rem;
+        flex-shrink: 0;
     }
     
     .navbar-toggle {
@@ -416,7 +422,16 @@ a {
     }
     
     .navbar-logo {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        flex-shrink: 0;
+    }
+    
+    .navbar-logo-text {
+        font-size: 0.95rem;
+    }
+    
+    .navbar-container {
+        gap: var(--spacing-xs);
     }
 }
 

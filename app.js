@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Countdown Timer
     // ============================================
     
-    const targetDate = new Date('2026-02-07T12:00:00').getTime();
+    const targetDate = new Date('2026-02-07T13:00:00').getTime();
     
     function updateCountdown() {
         const now = new Date().getTime();

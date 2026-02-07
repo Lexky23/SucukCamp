@@ -920,6 +920,8 @@ a {
     cursor: pointer;
     border: none;
     font-family: 'Inter', sans-serif;
+    position: relative;
+    overflow: hidden;
 }
 
 .btn:focus {
@@ -935,10 +937,29 @@ a {
     font-weight: 600;
 }
 
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn-primary:hover::before {
+    left: 100%;
+}
+
 .btn-primary:hover {
     background: linear-gradient(135deg, var(--gold-main), #e5c158);
-    box-shadow: 0 0 20px var(--gold-glow);
-    transform: translateY(-1px);
+    box-shadow: 0 0 25px var(--gold-glow), 0 4px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
 }
 
 .btn-secondary {
@@ -1853,6 +1874,8 @@ a {
     transition: var(--transition-base);
     text-align: center;
     text-decoration: none;
+    position: relative;
+    overflow: hidden;
 }
 
 .channel-btn-primary {
@@ -1862,12 +1885,32 @@ a {
     box-shadow: 0 2px 8px var(--gold-glow);
 }
 
+.channel-btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.channel-btn-primary:hover::before,
+.channel-btn-primary:focus::before {
+    left: 100%;
+}
+
 .channel-btn-primary:hover,
 .channel-btn-primary:focus {
     background: linear-gradient(135deg, var(--gold-main), #e5c158);
-    box-shadow: 0 0 20px var(--gold-glow);
-    transform: translateY(-1px);
+    box-shadow: 0 0 25px var(--gold-glow), 0 4px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
     outline: none;
+}
+
+.channel-btn-primary:active {
+    transform: translateY(0);
 }
 
 .channel-btn-secondary {

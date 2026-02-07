@@ -1881,6 +1881,61 @@ a {
     flex-wrap: wrap;
 }
 
+@media (max-width: 768px) {
+    .channels-powered {
+        flex-wrap: nowrap;
+        gap: var(--spacing-sm);
+        margin-top: var(--spacing-xl);
+        margin-bottom: var(--spacing-md);
+        padding: 0 var(--spacing-sm);
+    }
+    
+    .channels-powered-text {
+        font-size: 0.75rem;
+        white-space: nowrap;
+    }
+    
+    .channels-powered-amp {
+        font-size: 0.75rem;
+        white-space: nowrap;
+    }
+    
+    .channels-powered-logo-eksioglu .channels-powered-img {
+        height: 36px;
+        max-width: 120px;
+    }
+    
+    .channels-powered-logo-yaummi .channels-powered-img {
+        height: 24px;
+        max-width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .channels-powered {
+        gap: var(--spacing-xs);
+        padding: 0 var(--spacing-xs);
+    }
+    
+    .channels-powered-text {
+        font-size: 0.7rem;
+    }
+    
+    .channels-powered-amp {
+        font-size: 0.7rem;
+    }
+    
+    .channels-powered-logo-eksioglu .channels-powered-img {
+        height: 32px;
+        max-width: 100px;
+    }
+    
+    .channels-powered-logo-yaummi .channels-powered-img {
+        height: 20px;
+        max-width: 70px;
+    }
+}
+
 .channels-powered-text {
     font-size: 0.85rem;
     color: var(--text-muted);

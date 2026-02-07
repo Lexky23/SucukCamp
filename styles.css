@@ -982,9 +982,9 @@ a {
         padding: 0 var(--spacing-xs);
     }
     
-    /* Reduce Sucuk visibility on mobile */
+    /* Sucuk visibility on mobile - more visible */
     .sucuk-float {
-        opacity: 0.06;
+        opacity: 0.15;
     }
     
     .sucuk-float-1 {
@@ -1892,7 +1892,7 @@ a {
     justify-content: center;
     gap: var(--spacing-md);
     margin-top: var(--spacing-2xl);
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
     flex-wrap: wrap;
 }
 
@@ -1901,7 +1901,7 @@ a {
         flex-wrap: nowrap;
         gap: var(--spacing-sm);
         margin-top: var(--spacing-xl);
-        margin-bottom: var(--spacing-md);
+        margin-bottom: var(--spacing-sm);
         padding: 0 var(--spacing-sm);
     }
     
